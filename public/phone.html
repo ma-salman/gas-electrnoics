@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAS | Phones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    
+    
+    <style>
+        .gradient-background {
+      background: linear-gradient(300deg, #222831, #393e46, #eeeeee);
+      background-size: 188% 188%;
+      animation: gradient-animation 18s ease infinite;
+    }
+
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+        .color {
+      color: #222831 #393e46 #00adb5 #eeeeee;
+    }
+        .fontPrimary {
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    .fontSecondary {
+      font-family: "Exo 2", sans-serif;
+    }
+
+    .fontThird {
+      font-family: "Bebas Neue", sans-serif;
+    }
+
+    .snav {
+        height: 50px;
+        background-color: rgb(79, 79, 79);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .snav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        padding-right: 600px;
+      }
+
+      .snav a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      a:hover {
+        color: #747880;
+      }
+
+      .snav li {
+        list-style: none;
+      }
+
+      .snav button {
+        height: 40px;
+        width: 100px;
+        margin-right: 100px;
+        border-radius: 35px;
+        margin-right: 20px;
+        background-color: #00adb5;
+        color: #eeeeee;
+        border: color 5px2 solid black;
+      }
+
+      .snav p {
+        margin-left: 30px;
+        margin-right: 35px;
+        color: white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 40px;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      .snav form input {
+        height: 15px;
+        width: 100px;
+        padding: 10px 20px;
+        padding-left: 40px;
+        font-size: 16px;
+        border: 2px solid black;
+        border-radius: 25px;
+        outline: none;
+        margin-right: 50px;
+      }
+
+
+    .shine{
+      box-shadow: 0 3px 4px 0 #eeeeee;
+      opacity: 0.5;
+    }
+
+            .gnany{
+           border: 2px solid black;
+            height: 1000px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .gphone{
+            
+            padding-bottom: 50px;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .gleft{
+            
+            height: 250px;
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+        }
+        .gright{
+           margin-top: 50px;
+            height: 500px;
+            width: 1000px;
+        }
+        .gright img{
+            height: 500px;
+            width: 500px;
+        }
+        ul>li{
+            list-style: none;
+        }
+        .gphonename{
+            font-size: 2em;
+        }
+        span{
+            color:#e4d4c8;
+            box-shadow: 2px 2px 5px black;
+            border-radius: 100px;
+            padding: 5px;
+            margin-left: -0.2em;
+        }
+        .spanEle{
+            margin-top: 10px;
+        }
+        .gleftbutton{
+            width: 120px;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: #00adb5;
+        }
+
+       .ajay{
+        width: 1000px;
+       }
+
+        .card{
+            height: 350px;
+            width: 250px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: rgb(233, 233, 233);
+        }
+        .card .cardImg{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 180px;
+            padding-bottom: 10px;
+            background-color: rgb(197, 197, 197);
+            border-radius: 10px;
+        }
+        .card img{
+            width: 70%;
+            height: 180px;
+            padding: 0;
+            margin: 0;
+            align-self: center;
+            margin-top: 5px;
+            border-radius: 10px;
+            background-color: rgb(78, 71, 71);
+        }
+        .card h1,ul,button{
+            padding: 0;
+            margin: 0;
+            margin-left: 5px;
+        }
+        .card ul li{
+            list-style: none;
+        }
+        .card button{
+            margin-bottom: 5px;
+            width: 120px;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: #00adb5;
+        }
+
+        .tcard{
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .ucards{
+            height: 350px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .lcards{
+            height: 350px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+            .gfooter {
+
+height: 200px;
+width: 100%;
+background-color: #393e46;
+}
+
+.footer70 {
+height: 100%;
+width: 70%;
+display: flex;
+justify-content: space-around;
+}
+
+.f1,
+.f2,
+.f3 {
+height: 100%;
+width: 25%;
+}
+
+.f2,
+.f3 {
+display: flex;
+flex-direction: column;
+font-family: "Exo 2", sans-serif;
+}
+
+.f2>ul>li,
+.f3>ul>li {
+list-style: none;
+margin-bottom: 3px;
+
+}
+
+.f2 ul,
+.f3 ul {
+margin: 0;
+padding: 0;
+}
+
+.f2 ul li a,
+.f3 ul li {
+text-decoration: none;
+color: #eeeeee;
+}
+
+.f1 h1{
+font-size: 1.2rem;
+margin-top: 30px;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+      <div class="main1">
+        <div class="snav">
+          <p class="fontThird">GAS</p>
+          <ul>
+            <li><a class="fontSecondary" href="../index.html">HOME</a></li>
+            <li><a class="fontSecondary" href="./phone.html">PHONES</a></li>
+            <li><a class="fontSecondary" href="./laptop.html">LAPTOPS</a></li>
+          </ul>
+          <form action="/search" class="fontSecondary" method="get">
+            <input
+              type="text"
+              name=""
+              class="fontSecondary"
+              placeholder="Search..."
+            />
+          </form>
+          <button class="fontSecondary"><b>Cart</b></button>
+        </div>
+        </div>
+        <div class="main23">
+            <div class="main2">
+                <div class="gphone gradient-background">   
+                    <div class="gleft">
+                        <h1>
+                          <ul class="fontSecondary">
+                           <li class="gphonename fontPrimary">Google Pixel 9</li>
+                           <li> Ram - 8gb and 16gb</li>
+                           <li>Processor - tencer 9</li>
+                           <li class="spanEle"><span>feel the power of google</span></li>
+                           <button class="gleftbutton fontPrimary">1,53,999 Rs/-</button>
+                          </ul>
+                        </h1>
+                        
+                     </div>
+                      <div class="gright">
+                        <img src="../assets/images/pixel9profoldmainpng.png" alt="pixel9profold"/>
+                      </div>  
+                 </div>
+                
+            </div>
+            <div class="main3">
+                <div class="tcard gradient-background">
+                    <div class="ucards">
+                        <div class="card1 card fontPrimary">
+                            <div class="cardImg">
+                                <img src="../assets/images/onepluspng.png" alt="oneplus">
+                            </div>
+                            <h1>OnePlus 11R</h1>
+                            <ul>
+                                <li>RAM/STORAGE -16GB/512GB</li>
+                                <li>PROCESSOR&nbsp &nbsp &nbsp-8 Gen1</li>
+                                <li>CAMERA &nbsp &nbsp &nbsp &nbsp &nbsp -56MP/200MP</li>
+                            </ul>
+                            <button class="fontPrimary">19,999RS/-</button>
+                        </div>
+                        <div class="card2 card fontPrimary">
+                            <div class="cardImg">
+                                <img src="../assets/images/vivox90png.png" alt="vivo">
+                            </div>
+                            <h1>Vivo X90</h1>
+                            <ul>
+                                <li>RAM/STORAGE -8GB/16GB</li>
+                                <li>PROCESSOR&nbsp &nbsp &nbsp-MT(9200)</li>
+                                <li>CAMERA &nbsp &nbsp &nbsp &nbsp &nbsp -100MP/200mp</li>
+                            </ul>
+                            <button class="fontPrimary">27,999RS/-</button>
+                        </div>
+                        <div class="card3 card fontPrimary">
+                            <div class="cardImg">
+                                <img src="../assets/images/samsungs24png.png" alt="samsungs24">
+                            </div>
+                            <h1>Samsung S24</h1>
+                            <ul>
+                                <li>RAM/STORAGE -16GB/32GB</li>
+                                <li>PROCESSOR&nbsp &nbsp &nbsp-Exynos(2200)</li>
+                                <li>CAMERA &nbsp &nbsp &nbsp &nbsp &nbsp -50MP/150MP</li>
+                            </ul>
+                            <button class="fontPrimary">87,999RS/-</button>
+                        </div>
+                    </div>
+                    <div class="lcards">
+                        <div class="card1 card fontPrimary">
+                            <div class="cardImg">
+                                <img src="../assets/images/samsungzfold5png.png" alt="samsungfold">
+                            </div>
+                            <h1>Samsung Z Fold5</h1>
+                            <ul>
+                                <li>RAM/STORAGE -32GB</li>
+                                <li>PROCESSOR&nbsp &nbsp &nbsp-SD(8GEN-2)</li>
+                                <li>CAMERA &nbsp &nbsp &nbsp &nbsp &nbsp -70MP/180MP</li>
+                            </ul>
+                            <button class="fontPrimary">70,999RS/-</button>
+                        </div>
+                        <div class="card2 card fontPrimary">
+                            <div class="cardImg">
+                                <img src="../assets/images/MI11Xpng.png" alt="mi">
+                            </div>
+                            <h1>MI 11X</h1>
+                            <ul>
+                                <li>RAM/STORAGE -16GB</li>
+                                <li>PROCESSOR&nbsp &nbsp &nbsp-SD(888)</li>
+                                <li>CAMERA &nbsp &nbsp &nbsp &nbsp &nbsp -40MP/100MP</li>
+                            </ul>
+                            <button class="fontPrimary">43,999RS/-</button>
+                        </div>
+                        <div class="card3 card fontPrimary">
+                            <div class="cardImg">
+                                <img src="../assets/images/pixel7png.png" alt="pixel7">
+                            </div>
+                            <h1>Pixel 7</h1>
+                            <ul>
+                                <li>RAM/STORAGE -26GB</li>
+                                <li>PROCESSOR&nbsp &nbsp &nbsp-TENCOR(</li>
+                                <li>CAMERA &nbsp &nbsp &nbsp &nbsp &nbsp -</li>
+                            </ul>
+                            <button class="fontPrimary">35,999RS/-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main4">
+            
+        </div>
+        <div class="gfooter">
+            <div class="footer70">
+              <div class="f1">
+                <h1 class="fontThird">
+                  © Copyright.gas.2024
+                </h1>
+              </div>
+              <div class="f2">
+                <h1 class="fontThird">linkedin-</h1>
+                <ul>
+                  <li><a href="www.linkedin.com/in/gnanendhar-reddy-527612185">Gnanedhar Reddy</a></li>
+                  <li><a href="www.linkedin.com/in/kotra-ajay">Kotra Ajay</a></li>
+                  <li><a href="www.linkedin.com/in/salman784">RAW Salman</a></li>
+                </ul>
+              </div>
+              <div class="f3">
+                <h1 class="fontThird">Contact Us-</h1>
+                <ul>
+                  <li>gnanendarreddy43@gmail.com</li>
+                  <li>kvsajay324@gmail.com</li>
+                  <li>m.a.salman5130@gmail.com</li>
+      
+                </ul>
+              </div>
+      
+      
+      
+            </div>
+        </div>
+    </div>
+    
+   
+    <script src="./indexp.js"></script>
+</body>
+</html>

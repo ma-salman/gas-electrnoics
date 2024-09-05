@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAS</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .color {
+      color: #222831 #393e46 #00adb5 #eeeeee;
+    }
+
+    .gradient-background {
+      background: linear-gradient(300deg, #222831, #393e46, #eeeeee);
+      background-size: 188% 188%;
+      animation: gradient-animation 18s ease infinite;
+    }
+
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .fontPrimary {
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    .fontSecondary {
+      font-family: "Exo 2", sans-serif;
+    }
+
+    .fontThird {
+      font-family: "Bebas Neue", sans-serif;
+    }
+
+    .snav {
+      height: 50px;
+      background-color: rgb(79, 79, 79);
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .snav ul {
+      display: flex;
+      justify-content: space-between;
+      width: 800px;
+      padding-right: 600px;
+    }
+
+    .snav a {
+      color: white;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    a:hover{
+        color: #747880;
+    }
+
+    .snav li {
+      list-style: none;
+    }
+
+    .snav button {
+      height: 40px;
+      width: 100px;
+      margin-right: 100px;
+      border-radius: 35px;
+      margin-right: 20px;
+      background-color: #00adb5;
+      color: #eeeeee;
+      border: color 5px2 solid black;
+    }
+
+    
+
+    .snav p {
+      margin-left: 30px;
+      color: white;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 40px;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    .snav form input {
+      height: 15px;
+      width: 100px;
+      padding: 10px 20px;
+      padding-left: 40px;
+      font-size: 16px;
+      border: 2px solid black;
+      border-radius: 25px;
+      outline: none;
+      margin-right: 50px;
+    }
+
+    
+
+    .gphone {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .gright {
+      height: 500px;
+      width: 50%;
+    }
+
+    .gleft {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .gleft h1 {
+      font-size: 5rem;
+      padding: 0%;
+      margin: 0%;
+    }
+
+    .gright img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .gbutton {
+      width: 40%;
+      height: 40px;
+      border: none;
+      border-radius: 20px;
+      background-color: #00adb5;
+      color: #eeeeee;
+      font-weight: bold;
+    }
+
+    .shine{
+      box-shadow: 0 3px 4px 0 #eeeeee;
+      opacity: 0.5;
+    }
+
+    .gpara {
+      text-align: justify;
+    }
+
+    .gfooter {
+
+      height: 200px;
+      width: 100%;
+      background-color: #393e46;
+    }
+
+    .footer70 {
+      height: 100%;
+      width: 70%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .f1,
+    .f2,
+    .f3 {
+      height: 100%;
+      width: 25%;
+    }
+
+    .f2,
+    .f3 {
+      display: flex;
+      flex-direction: column;
+      font-family: "Exo 2", sans-serif;
+    }
+
+    .f2>ul>li,
+    .f3>ul>li {
+      list-style: none;
+      margin-bottom: 3px;
+
+    }
+
+    .f2 ul,
+    .f3 ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .f2 ul li a,
+    .f3 ul li {
+      text-decoration: none;
+      color: #eeeeee;
+    }
+
+    .f1 h1{
+      font-size: 1.2rem;
+      margin-top: 30px;
+    }
+
+
+
+    
+
+    .alaptop {
+      height: 500px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .aleft {
+      height: 500px;
+      width: 40%;
+    }
+
+    .aleft>img {
+      height: 500px;
+      width: 100%;
+    }
+
+    .aright {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .aright>h1 {
+      font-size: 5rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .aright>p {
+      text-align: justify;
+    }
+
+    .aright>button {
+      width: 40%;
+      height: 40px;
+      border: none;
+      border-radius: 20px;
+      background-color: #00adb5;
+      color: #eeeeee;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main gradient-background">
+    <div class="main3">
+      <div class="snav">
+        <p class="fontThird">GAS</p>
+        <ul>
+          <li><a class="fontSecondary" href="">HOME</a></li>
+          <li><a class="fontSecondary" href="./public/phone.html">PHONES</a></li>
+          <li><a class="fontSecondary" href="./public/laptop.html">LAPTOPS</a></li>
+        </ul>
+        <form action="/search" class="fontSecondary" method="get">
+          <input type="text" name="" class="fontSecondary" placeholder="Search..." />
+        </form>
+        <button class="fontSecondary"><b>Cart</b></button>
+      </div>
+    </div>
+    <div class="main1">
+      <div class="gphone">
+        <div class="gleft">
+          <h1 class="fontPrimary">Mobiles</h1>
+          <p class="gpara fontSecondary">
+            Discover the latest in mobile technology with our premium
+            selection of smartphones. From high-performance models with
+            cutting-edge features to budget-friendly options, we offer a
+            diverse range of phones to meet all your needs. Whether you're
+            looking for sleek design, powerful processors, or exceptional
+            camera quality, find the perfect device to stay connected and
+            capture every moment with ease.
+          </p>
+          <button class="gbutton fontSecondary">
+            Phones from 19,999RS/-
+          </button>
+        </div>
+        <div class="gright">
+          <img src="./assets/images/iphone-2.png" alt="phone" />
+        </div>
+      </div>
+      <div class="main2">
+        <div class="alaptop">
+          <div class="aleft">
+            <img src="./assets/images/design for laptop[1].png" alt="Laptop" />
+          </div>
+          <div class="aright">
+            <h1 class="fontPrimary">Laptops</h1>
+            <p class="fontSecondary">
+              Get Latest Laptops with high specs and processing. Thes laptops
+              come in various prices and are for every age group. we offer a
+              diverse range of Laptops to meet all your needs. Whether you're
+              looking for sleek design, powerful processors, or exceptional
+              gaming quality, find the perfect device to stay connected and
+              capture every moment.
+            </p>
+            <button class="fontSecondary">Laptops from 29,999RS/-</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="main4">
+      <div class="gfooter">
+        <div class="footer70">
+          <div class="f1">
+            <h1 class="fontThird">
+              © Copyright.gas.2024
+            </h1>
+          </div>
+          <div class="f2">
+            <h1 class="fontThird">linkedin-</h1>
+            <ul>
+              <li><a href="www.linkedin.com/in/gnanendhar-reddy-527612185">Gnanedhar Reddy</a></li>
+              <li><a href="www.linkedin.com/in/kotra-ajay">Kotra Ajay</a></li>
+              <li><a href="www.linkedin.com/in/salman784">RAW Salman</a></li>
+            </ul>
+          </div>
+          <div class="f3">
+            <h1 class="fontThird">Contact Us-</h1>
+            <ul>
+              <li>gnanendarreddy43@gmail.com</li>
+              <li>kvsajay324@gmail.com</li>
+              <li>m.a.salman5130@gmail.com</li>
+  
+            </ul>
+          </div>
+  
+  
+  
+        </div>
+    </div>
+  </div>
+
+  <script src="../Project Gas/public/indexh.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAS | Laptops</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .color {
+        color: #222831 #393e46 #00adb5 #eeeeee;
+      }
+
+      .fontPrimary {
+        font-family: "Josefin Sans", sans-serif;
+      }
+      .fontSecondary {
+        font-family: "Exo 2", sans-serif;
+      }
+      .fontThird {
+        font-family: "Bebas Neue", sans-serif;
+      }
+
+      .gradient-background {
+        background: linear-gradient(300deg, #222831, #393e46, #eeeeee);
+        background-size: 188% 188%;
+        animation: gradient-animation 18s ease infinite;
+      }
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .snav {
+        height: 50px;
+        background-color: rgb(79, 79, 79);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .snav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 800px;
+        padding-right: 600px;
+      }
+
+      .snav a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      a:hover {
+        color: #747880;
+      }
+
+      .snav li {
+        list-style: none;
+      }
+
+      .snav button {
+        height: 40px;
+        width: 100px;
+        margin-right: 100px;
+        border-radius: 35px;
+        margin-right: 20px;
+        background-color: #00adb5;
+        color: #eeeeee;
+        border: color 5px2 solid black;
+      }
+
+      .snav p {
+        margin-left: 30px;
+        margin-right: 30px;
+        color: white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 40px;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      .snav form input {
+        height: 15px;
+        width: 100px;
+        padding: 10px 20px;
+        padding-left: 40px;
+        font-size: 16px;
+        border: 2px solid black;
+        border-radius: 25px;
+        outline: none;
+        margin-right: 50px;
+      }
+
+      .shine{
+      box-shadow: 0 3px 4px 0 #eeeeee;
+      opacity: 0.5;
+    }
+
+      .mainbox {
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .redbox {
+        height: 500px;
+        width: 50%;
+        margin-top: 30px;
+      }
+      .macimg{
+        width: 700px;
+        height: 500px;
+      }
+      .bluebox {
+        height: 300px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 100px;
+        margin-top: 30px;
+      }
+      .bluebox h1 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 3rem;
+        margin: 0px;
+        padding: 0px;
+      }
+      .bluebox p {
+        text-align: justify;
+        font-size: large;
+        
+      }
+      .bluebox button{
+        height: 50px;
+        width: 200px;
+        background-color: #00adb5;
+        border-radius: 20px;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        color: white;
+        border: none;
+      } 
+      
+
+      .card{
+        border:2px solid black;
+        height: 350px;
+        width: 250px;
+        border-radius: 10px;
+        background-color: #eeeeee;
+      }
+      .dimg{
+        border: 2px solid black;
+        height: 20px;
+        width:20px;
+      }
+      ul>li{
+        list-style: none;
+        padding: 0%;
+        margin: 0%;
+        margin-left: 5px;
+      }
+      ul{
+        margin: 0;
+        padding: 0;
+      }
+      img{
+        height: 200px;
+        width:250px;
+      }
+      .ucard,.lcard{
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .tcard{
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+      }
+
+      .gfooter {
+
+    height: 200px;
+     width: 100%;
+background-color: #393e46;
+}
+
+.footer70 {
+height: 100%;
+width: 70%;
+display: flex;
+justify-content: space-around;
+}
+
+.f1,
+.f2,
+.f3 {
+height: 100%;
+width: 25%;
+}
+
+.f2,
+.f3 {
+display: flex;
+flex-direction: column;
+font-family: "Exo 2", sans-serif;
+}
+
+.f2>ul>li,
+.f3>ul>li {
+list-style: none;
+margin-bottom: 3px;
+
+}
+
+.f2 ul,
+.f3 ul {
+margin: 0;
+padding: 0;
+}
+
+.f2 ul li a,
+.f3 ul li {
+text-decoration: none;
+color: #eeeeee;
+}
+
+.f1 h1{
+font-size: 1.2rem;
+margin-top: 30px;
+}
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="snav">
+        <p class="fontThird">GAS</p>
+        <ul>
+          <li><a class="fontSecondary" href="../index.html">HOME</a></li>
+          <li><a class="fontSecondary" href="./phone.html">PHONES</a></li>
+          <li><a class="fontSecondary" href="./laptop.html">LAPTOPS</a></li>
+        </ul>
+        <form action="/search" class="fontSecondary" method="get">
+          <input
+            type="text"
+            name=""
+            class="fontSecondary"
+            placeholder="Search..."
+          />
+        </form>
+        <button class="fontSecondary"><b>Cart</b></button>
+      </div>
+
+      <div class="sam">
+        <div class="mainbox gradient-background">
+          <div class="redbox">
+            <img
+             class="macimg" src="../assets/images/latop_main_img-removebg-preview.png"
+              alt="macimg"
+            />
+          </div>
+          <div class="bluebox">
+            <h1>NEW MAC AIR</h1>
+            <p>
+              Experience the next level of innovation with the new MacBook Air.
+              Designed to be ultra-thin and incredibly light, it's the perfect
+              companion for on-the-go professionals, students, and creatives.
+              Powered by the latest M-series chip, the MacBook Air delivers
+              blazing-fast performance, allowing you to seamlessly multitask,
+              create, and explore like never before.
+            </p>
+            <butto>Starting from Rs/-55999</butto>
+          </div>
+        </div>
+      </div>
+
+      <div class="tcard gradient-background">
+        <div class="ucard">
+          <div class="card1 card fontPrimary">
+            <div class="cardimg">
+              <img  src="../assets/images/acer nitro.png" alt="acer nitro">
+            </div>
+            <h1>
+              Acer Nitro
+            </h1>
+            <ul>
+              <li>Processor-i5(Gen-10)</li>
+              <li>Ram-8GB</li>
+              <li>Graphic Card-GTX(1650/4GB)</li>
+            </ul>
+            <button class="fontPrimary">35,999RS/-</button>
+        </div>
+        <div class="card2 card fontPrimary">
+          <div class="cardimg">
+            <img src="../assets/images/asustuf1.png" alt="asustuf1">
+          </div>
+          <h1>
+            Asus Tuf
+          </h1>
+          <ul>
+            <li>Processor-i5(GEN-10)</li>
+            <li>Ram-8GB</li>
+            <li>Graphic Card-GTX(1650/4GB)</li>
+          </ul>
+          <button class="fontPrimary">60,999RS/-</button>
+      </div>
+      
+     <div class="card3 card fontPrimary">
+        <div class="cardimg">
+            <img src="../assets/images/dellg3.png" alt="DellG3">
+        </div>
+          <h1>
+                Dell G3
+           </h1>
+         <ul>
+            <li>Processor-i7(GEN-10)</li>
+            <li>Ram-8GB</li>
+            <li>Graphic Card-GTX(1660/6GB)</li>
+          </ul>
+          <button class="fontPrimary">85,999RS/-</button>
+       </div>
+       
+        </div>
+        <div class="lcard">
+        <div class="card1 card fontPrimary">
+          <div class="cardimg">
+            <img src="../assets/images/hpvictus.PNG" alt="hp victus img">
+          </div>
+          <h1>
+            HP Victus
+          </h1>
+          <ul>
+            <li>Processor-i5(GEN-12)</li>
+            <li>Ram-16GB</li>
+            <li>Graphic Card-RTX(3050)</li>
+          </ul>
+          <button class="fontPrimary">69,999RS/-</button>
+      </div>
+      <div class="card2 card fontPrimary">
+        <div class="cardimg">
+          <img src="../assets/images/lenovolegion.png" alt="lenovolegion">
+        </div>
+        <h1>
+          Legion
+        </h1>
+        <ul>
+          <li>Processor-i5(GEN-10)</li>
+          <li>Ram-8GB</li>
+          <li>Graphic Card-GTX(1660/6GB)</li>
+        </ul>
+        <button class="fontPrimary">69,999RS/-</button>
+    </div>
+    <div class="card3 card fontPrimary">
+      <div class="cardimg">
+        <img src="../assets/images/rog.PNG" alt="rog">
+      </div>
+      <h1>
+        Asus ROG
+      </h1>
+      <ul>
+        <li>Processor-i7(GEN-10)</li>
+        <li>Ram-16GB</li>
+        <li>Graphic Card-RTX(2050)</li>
+      </ul>
+      <button class="fontPrimary">79,999RS/-</button>
+      </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="gnany">
+      <div class="main">
+        
+        
+
+      </div>
+     </div>
+
+    <div class="gfooter">
+      <div class="footer70">
+        <div class="f1">
+          <h1 class="fontThird">
+            © Copyright.gas.2024
+          </h1>
+        </div>
+        <div class="f2">
+          <h1 class="fontThird">linkedin-</h1>
+          <ul>
+            <li><a href="www.linkedin.com/in/gnanendhar-reddy-527612185">Gnanedhar Reddy</a></li>
+            <li><a href="www.linkedin.com/in/kotra-ajay">Kotra Ajay</a></li>
+            <li><a href="www.linkedin.com/in/salman784">RAW Salman</a></li>
+          </ul>
+        </div>
+        <div class="f3">
+          <h1 class="fontThird">Contact Us-</h1>
+          <ul>
+            <li>gnanendarreddy43@gmail.com</li>
+            <li>kvsajay324@gmail.com</li>
+            <li>m.a.salman5130@gmail.com</li>
+
+          </ul>
+        </div>
+
+
+
+      </div>
+  </div>
+
+
+  <script src="../Project Gas/public/index.js"></script>
+  </body>
+</html>
